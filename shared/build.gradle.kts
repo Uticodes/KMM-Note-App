@@ -59,11 +59,18 @@ kotlin {
     }
 }
 
+sqldelight {
+    database("NoteDatabase") {
+        packageName = "uticodes.tutorials.kmmnoteappdemo.database"
+        sourceFolders = listOf("sqldelight")
+    }
+}
+
 android {
     namespace = "uticodes.tutorials.kmmnoteappdemo"
-    compileSdk = 32
+    compileSdk = 33
     defaultConfig {
         minSdk = 23
-        targetSdk = 32
+        targetSdk = 33
     }
 }
